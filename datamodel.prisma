@@ -6,10 +6,11 @@ type User {
   lastName: String @default(value: "")
   followers: [User!]! @relation(name: "FollowRelation")
   following: [User!]! @relation(name: "FollowRelation")
-  bio: String!
+  bio: String
   posts: [Post!]!
   likes: [Like!]!
   comments: [Comment!]!
+  rooms: [Room!]!
 }
 
 type Post {
@@ -40,3 +41,18 @@ type File {
   url: String!
   post: Post!
 }
+
+type Room {
+  id: ID! @id
+  pariticipants: [User!]!
+  messages: [Message!]!
+}
+
+type Message {
+  id: ID! @id
+  text: String!
+  from: [User!]! @relation(name: "From")
+  to: [User!]! @relation(name: "To")
+  room: Room!
+}
+
