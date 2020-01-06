@@ -1,2 +1,2 @@
-# hello-graphql-dataloader
-graphql server with dataLoader
+# prismagram-graphql-api
+prismagram graphql api
