@@ -1,0 +1,19 @@
+{
+  "name": "prismagram-graphql-api",
+  "version": "1.0.0",
+  "description": "prismagram graphql api",
+  "repository": "https://github.com/GuGu99/prismagram-graphql-api.git",
+  "author": "GuGU <wnduddl3409@naver.com>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "graphql-yoga": "^1.18.3"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "nodemon": "^2.0.2"
+  },
+  "scripts": {
+    "dev": "nodemon --exec babel-node src/server.js"
+  }
+}
