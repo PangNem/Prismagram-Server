@@ -1,5 +1,5 @@
-import { prisma } from "../../../../generated/prisma-client";
-import { generateToken } from "../../../utils";
+import { prisma } from "generated/prisma-client";
+import { generateToken } from "src/utils";
 
 export default {
   Mutation: {
