@@ -1,4 +1,4 @@
-import { adjectives, nouns } from "./lib";
+import { adjectives, nouns } from "src/lib";
 import nodemailer from "nodemailer";
 import sgTranport from "nodemailer-sendgrid-transport";
 import jwt from "jsonwebtoken";
