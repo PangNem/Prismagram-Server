@@ -57,3 +57,9 @@ type Message {
   room: Room!
 }
 
+type UserProfile {
+  id: ID! @id
+  user: User!
+  posts: [Post!]!
+}
+

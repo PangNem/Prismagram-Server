@@ -8,8 +8,6 @@ export default {
       const { user } = request
       const userProfile = await prisma.user({ id: user.id });
       const posts = await prisma.user({ id: user.id }).posts();
-      console.log(userProfile);
-      console.log(posts);
       return {
         userProfile, posts
       };
