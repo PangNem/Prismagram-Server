@@ -1,2 +1,2 @@
-# prismagram-graphql-api
-prismagram graphql api
+# Prismagram-Server
+Instagram GraphQL API Server
